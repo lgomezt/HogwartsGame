@@ -5,8 +5,8 @@ import sys
 import os
 
 app = Flask(__name__)
-# CORS(app)  # Enable CORS for all routes
-CORS(app, origins=["https://hogwartsgame.netlify.app"])
+# Restrict CORS to your Netlify domain
+CORS(app, resources={r"/*": {"origins": ["https://hogwartsgame.netlify.app"]}})
 
 @app.route('/execute', methods=['POST'])
 def execute_code():
@@ -42,6 +42,10 @@ def execute_code():
         error_message = f"Error: {str(e)}"
         print("Execution error:", error_message)
         return jsonify({"error": error_message}), 400
+
+@app.route('/')
+def index():
+    return "Hogwarts Game Backend is running!"
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # Default to 5000 if PORT is not set
