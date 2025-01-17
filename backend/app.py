@@ -4,7 +4,8 @@ import io
 import sys
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+# CORS(app)  # Enable CORS for all routes
+CORS(app, origins=["https://hogwartsgame.netlify.app"])
 
 @app.route('/execute', methods=['POST'])
 def execute_code():

@@ -30,7 +30,8 @@ print(ans)
 
   const handleRunCode = async () => {
     try {
-      const response = await axios.post("http://127.0.0.1:5000/execute", { 
+      // const response = await axios.post("http://127.0.0.1:5000/execute", { 
+        const response = await axios.post("https://hogwartsgamebackend.onrender.com", { 
         code, // Sends { "code": <your-code> }
       });
     
