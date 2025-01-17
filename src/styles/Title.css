@@ -1,0 +1,16 @@
+.title {
+    display: flex;
+    align-items: center; 
+    gap: 1rem;
+    margin-top: 1rem;
+    }
+
+.title h1 {
+    font-weight: 300; /* Light */
+    font-size: 2rem; 
+  }
+
+.title img {
+width: 8rem;
+height: auto; 
+}

@@ -1,0 +1,8 @@
+.console-output {
+    color: #f8f8f2;
+    background-color: #181818;
+    height: 10rem;
+    padding: 1rem 1.5rem;
+    font-family: 'Fira Code', monospace;
+    overflow-y: auto;
+}

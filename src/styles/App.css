@@ -1,0 +1,13 @@
+.app-container {
+  display: flex; 
+  justify-content: space-between;
+  align-items: stretch; /* Ensures the panels stretch to the same height */
+  height: 100vh; /* Keeps the container full-height */
+  gap: 2rem; /* Spacing between the panels */
+  padding: 0;
+}
+
+/* Shared styles */
+.panel {
+  border-radius: 1rem;
+}

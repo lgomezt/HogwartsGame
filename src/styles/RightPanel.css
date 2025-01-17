@@ -1,0 +1,7 @@
+.right-panel {
+  width: 55%;
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Stacks child elements vertically */
+  justify-content: flex-start; /* Align content to the top */
+  margin: 1rem 1.5rem 1rem 0;
+}

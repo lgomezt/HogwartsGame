@@ -1,0 +1,8 @@
+nav {
+    background-color: #203147;
+    color: #fff;
+    width: calc(100% + 1rem); /* Extend to account for left-panel padding */
+    padding: 0.75rem 1rem;
+    margin-left: -1.5rem; /* Adjust to match left-panel's padding */
+    margin-top: -1rem; /* Adjust to match left-panel's margin */
+}
