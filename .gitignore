@@ -1,24 +1,71 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
 # Logs
-logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS-specific files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Dependency directories
+/.pnp
+.pnp.js
+
+# Debug files
+*.log
+
+# Generated files
+*.cache
+*.tmp
+*.lock
+coverage/
+
+# System files
+*.swp
+*.lock
+*.pid
+*.seed
+*.log
+*.gz
+*.snm
+
+# Netlify-specific files
+netlify.toml
+
+# Lint/formatting cache
+.eslintcache
+.prettiercache
+
+# TypeScript build files
+*.tsbuildinfo
+
+# SASS/SCSS cache
+.sass-cache/
+
+# Test coverage reports
+coverage/
+
+# React Native files
+.expo/
+web-build/
+
+# Miscellaneous
+*.bak
+*.backup
